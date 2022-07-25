@@ -69,7 +69,7 @@ public class JavaCodeEvolution {
         System.out.println();
 
 
-        //Example G: method referenced in a var
+        //Example H: method referenced in a var
         Consumer<String> consumerWithMethodReferenced = System.out::println;
         names.forEach(consumerWithMethodReferenced);
         System.out.println();
