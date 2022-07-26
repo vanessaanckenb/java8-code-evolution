@@ -216,7 +216,7 @@ names.forEach(consumerWithMethodReferenced);
 </br>
 </br>
 
-vInterface Funcional**
+* **Interface Funcional**
 
 Interface que só tem 1 único método abstrato. Além desse método ela pode ter outros métodos, contanto que sejam default ou 'static'.
 
