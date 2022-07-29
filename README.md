@@ -122,6 +122,15 @@ Consumer<String> consumer = new Consumer<String>() {
 names.forEach(consumer);
 ```
 
+Compiler creates a class that implements this Interface
+
+Warning! This generated class by compiler only exists when the class is runned
+
+It can be more difficult to debug when we have an exception
+
+Its a very good way to use anonymous class when its simple and not too big, other way its better to create a separeted class implementing the interface
+
+
 </br>
 </br>
 
@@ -312,6 +321,16 @@ Em vez de você ter que criar uma classe somente para ser usada uma vez,
 voce pode cria-la dando um new diretamente na Interface
 
 você só pode dar um new na interface se você for fornecer os métodos de implementação ali mesmo
+
+Nesse caso o compilador gera uma classe anônima que implementa a interface
+
+Cuidado com as classes anônimas pois podem dificultar a leitura
+
+Como o compilador realmente gera uma classe, essa classe só existe quando é executada. 
+
+Isso pode ser mais difícil de se entender quando recebemos uma exceção ou depuramos o código pois a classe não está presente no nosso código fonte.
+
+Dica: quando o comando é simples e curto deve usar as classes anônimas, quando tem muito código melhor separar a classe e implementar a interface
 
 ```
 Consumer<String> consumer = new Consumer<String>() {
